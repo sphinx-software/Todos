@@ -3,7 +3,7 @@ const app = new Koa();
 const koaBody = require('koa-body');
 const Router = require('koa-router');
 const _ = require('lodash');
-const cors = require('cors');
+const cors = require('@koa/cors');
 
 require('dotenv').config();
 const dbConfig = require('./knexfile');
