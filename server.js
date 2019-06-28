@@ -7,7 +7,7 @@ const _ = require('lodash');
 require('dotenv').config();
 const dbConfig = require('./knexfile');
 
-const knex = require('knex')(dbConfig[process.env.DB_NODE_ENV]);
+const knex = require('knex')(dbConfig[process.env.NODE_ENV]);
 
 const Repository = require('./repository');
 const Factory = require('./factory');
